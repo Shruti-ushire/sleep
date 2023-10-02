@@ -36,7 +36,7 @@ selected = option_menu(
     }
 )
 
-df = pd.read_csv('./.streamlit/Dataset/dataset.csv')
+df = pd.read_csv('dataset.csv')
 df.drop(['Person ID', 'Sick'], axis=1, inplace=True)
 df = df[['Gender', 'Age', 'Occupation', 'Sleep Duration', 'Quality of Sleep',
        'Physical Activity Level', 'BMI Category', 'Heart Rate',
